@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #545AA7;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço igualmente entre os blocos */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os blocos quebrem para a linha seguinte se necessário */
+    margin: 0 20px; /* Adiciona margin para não colar na borda da tela */
+}
+
+.section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Mantém os blocos com a mesma largura */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Impede que os blocos encolham */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    position: relative; /* Permite que o ícone seja posicionado absolutamente dentro do bloco */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Adiciona transição suave */
+}
+
+.section:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do bloco ao passar o mouse */
+    opacity: 0.9; /* Torna o bloco um pouco transparente ao passar o mouse */
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    position: absolute; /* Posiciona o ícone no canto direito */
+    top: 20px; /* Ajusta o posicionamento do ícone no bloco */
+    right: 40px;
+    width: 80px; /* Define o tamanho do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #545AA7;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
